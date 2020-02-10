@@ -34,6 +34,9 @@ In progress! -->
 
 This was mine first application that I built by myself after lot of courses. I only used React for this project.
 
+### NPM Packages
+I only used create-react-app boilerplate
+
 ## Setup
 
 ### Install
