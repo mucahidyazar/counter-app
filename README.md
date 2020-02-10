@@ -26,9 +26,13 @@ Beautiful, clean design with light and dark themes.
 
 In progress! -->
 
-## Reviews
+<!-- ## Reviews 
 
-> _"I think the lack of extra crap is a feature."_ — Craig Lam
+> _"I think the lack of extra crap is a feature."_ — Craig Lam-->
+
+## Description
+
+This was mine first application that I built by myself after lot of courses. I only used React for this project.
 
 ## Setup
 
