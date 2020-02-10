@@ -10,9 +10,9 @@
 <img src="./public/assets/img/counter-app.gif">
 </div>
 
-### Simple
+<!-- ### Simple
 
-TakeNote was made by developers for developers - a simple, plain-text note-taking app for the web with Markdown support. What you see is what you paste. No WYSIWIG, no formatting pasted from the web, and no features you don't need or want.
+Counter--app was made by me - a simple, plain-text clicker app for the web with Github support. What you see is what you paste. No WYSIWIG, no formatting pasted from the web, and no features you don't need or want.
 
 ### Organized
 
@@ -24,7 +24,7 @@ Beautiful, clean design with light and dark themes.
 
 ### Sync to GitHub
 
-In progress!
+In progress! -->
 
 ## Reviews
 
@@ -35,12 +35,12 @@ In progress!
 ### Install
 
 ```bash
-git clone git@github.com:taniarascia/takenote
-cd takenote
-npm i
+git clone git@github.com:mucahidyazar/counter-app
+cd counter-app
+npm i or yarn
 ```
 
-### Development
+<!-- ### Development
 
 In the development environment, an Express server is running on port `5000` to handle all API calls, and a hot Webpack dev server is running on port `3000` for the React front end. To run both of these servers concurrently, run the `dev` command.
 
@@ -51,32 +51,54 @@ npm run dev
 
 Go to `localhost:3000` to view the app.
 
-API requests will be proxied to port `5000` automatically.
+API requests will be proxied to port `5000` automatically. -->
 
 ### Production
 
-In production, the React app is built, and Express redirects all incoming requests to the `dist` directory on port `5000`.
+<!-- In production, the React app is built, and Express redirects all incoming requests to the `dist` directory on port `5000`. -->
 
 ```bash
 # Build client for production and start server
-npm run build && npm run start
+# npm run build &&
+npm run start
 ```
 
 Go to `localhost:5000` to view the app.
 
+<!-- ### Run in Docker
+
+Docker containers are [also available on the Dockerhub registry](https://hub.docker.com/r/taniarascia/takenote).
+
+```bash
+docker build -t takenote .
+docker run -p 5000:5000 takenote
+# Go to localhost:5000 to view the application
+```
+
 ### Seed data
 
-Not yet
+To seed the app with some test data, paste the contents of `seed.js` into your browser console.
 
 ## Testing
 
-Not yet
+Run unit and component tests.
+
+```bash
+npm run test
+```
+
+Run Cypress e2e tests.
+
+```bash
+npm run cypress:open
+``` -->
 
 ## Contributing
+Counter-app is an open source project, and contributions of any kind are welcome! 
 
-TakeNote is an open source project, and contributions of any kind are welcome! Open issues, bugs, and enhancements are all listed on the [issues](https://github.com/taniarascia/takenote/issues) tab and labeled accordingly. Feel free to open bug tickets and make feature requests. Easy bugs and features will be tagged with the `good first issue` label.
+<!-- TakeNote is an open source project, and contributions of any kind are welcome! Open issues, bugs, and enhancements are all listed on the [issues](https://github.com/taniarascia/takenote/issues) tab and labeled accordingly. Feel free to open bug tickets and make feature requests. Easy bugs and features will be tagged with the `good first issue` label.
 
-The project is written in TypeScript, React and Redux. TypeScript is set to strict mode, with no implicit any allowed. The formatting style for the project is set by Prettier.
+The project is written in TypeScript, React and Redux. TypeScript is set to strict mode, with no implicit any allowed. The formatting style for the project is set by Prettier. -->
 
 ## Acknowledgements
 
