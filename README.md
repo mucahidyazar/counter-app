@@ -1,68 +1,89 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+ <img src="https://img.shields.io/badge/License-MIT-blue.svg">
+  <a href="#"><img src="https://img.shields.io/badge/all_contributors-31-orange.svg?style=flat-square)"></a>
+   <a href="#"><img src="https://travis-ci.org/taniarascia/takenote.svg?branch=master"></a>
+</p>
 
-## Available Scripts
+<!-- > **Warning**: TakeNote is still in active development. You can visit [takenote.dev](https://takenote.dev) to see the work in progress, but your account and the notes you create are **temporary** will not be persisted. All data will be lost once GitHub integration is complete. -->
 
-In the project directory, you can run:
+![Screenshot](./public/assets+/img/counter-app.gif)
 
-### `yarn start`
+### Simple
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+TakeNote was made by developers for developers - a simple, plain-text note-taking app for the web with Markdown support. What you see is what you paste. No WYSIWIG, no formatting pasted from the web, and no features you don't need or want.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Organized
 
-### `yarn test`
+Drag-and-drop notes into categories, instantly search through notes, and pin your favorites to the top.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Beautiful
 
-### `yarn build`
+Beautiful, clean design with light and dark themes.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Sync to GitHub
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+In progress!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Reviews
 
-### `yarn eject`
+> _"I think the lack of extra crap is a feature."_ — Craig Lam
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Setup
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Install
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+git clone git@github.com:taniarascia/takenote
+cd takenote
+npm i
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Development
 
-## Learn More
+In the development environment, an Express server is running on port `5000` to handle all API calls, and a hot Webpack dev server is running on port `3000` for the React front end. To run both of these servers concurrently, run the `dev` command.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+# Run client and server concurrently
+npm run dev
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Go to `localhost:3000` to view the app.
 
-### Code Splitting
+API requests will be proxied to port `5000` automatically.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Production
 
-### Analyzing the Bundle Size
+In production, the React app is built, and Express redirects all incoming requests to the `dist` directory on port `5000`.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+```bash
+# Build client for production and start server
+npm run build && npm run start
+```
 
-### Making a Progressive Web App
+Go to `localhost:5000` to view the app.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### Seed data
 
-### Advanced Configuration
+Not yet
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Testing
 
-### Deployment
+Not yet
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## Contributing
 
-### `yarn build` fails to minify
+TakeNote is an open source project, and contributions of any kind are welcome! Open issues, bugs, and enhancements are all listed on the [issues](https://github.com/taniarascia/takenote/issues) tab and labeled accordingly. Feel free to open bug tickets and make feature requests. Easy bugs and features will be tagged with the `good first issue` label.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+The project is written in TypeScript, React and Redux. TypeScript is set to strict mode, with no implicit any allowed. The formatting style for the project is set by Prettier.
+
+## Acknowledgements
+
+- A big thank you to [Mucahid Yazar](https://dkbock.com/) for logo design.
+
+## Author
+
+- [Mucahid Yazar](https://github.com/mucahidyazar)
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
