@@ -6,7 +6,7 @@
 
 <!-- > **Warning**: TakeNote is still in active development. You can visit [takenote.dev](https://takenote.dev) to see the work in progress, but your account and the notes you create are **temporary** will not be persisted. All data will be lost once GitHub integration is complete. -->
 
-<center>![Screenshot](./public/assets/img/counter-app.gif)</center>
+<div align="center">![Screenshot](./public/assets/img/counter-app.gif)</div>
 
 ### Simple
 
